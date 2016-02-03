@@ -20,3 +20,12 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 routesGenerator := InjectedRoutesGenerator
 
 herokuAppName in Compile := "rate-my-meetings"
+
+ScoverageSbtPlugin.ScoverageKeys.coverageMinimum := 60
+
+ScoverageSbtPlugin.ScoverageKeys.coverageFailOnMinimum := false
+
+ScoverageSbtPlugin.ScoverageKeys.coverageHighlighting := {
+  if (scalaBinaryVersion.value == "2.11") false
+  else false
+}
