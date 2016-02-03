@@ -15,8 +15,5 @@ notifications:
 jdk:
   - oraclejdk8
 
-before_install:
-  - pip install codecov
-
 after_success:
   - pip install --user codecov && codecov
