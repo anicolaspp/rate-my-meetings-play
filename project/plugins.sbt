@@ -17,4 +17,4 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
 
 addSbtPlugin("com.heroku" % "sbt-heroku" % "1.0.0")
 
-addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.1.0")
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.2.0")
