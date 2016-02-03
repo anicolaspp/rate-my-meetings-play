@@ -9,4 +9,7 @@ class Application extends Controller {
     Ok(views.html.index("Testing auto deployment in heroku"))
   }
 
+  def x = Action {
+    BadRequest("error page")
+  }
 }
