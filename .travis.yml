@@ -15,5 +15,8 @@ notifications:
 jdk:
   - oraclejdk8
 
-scripts:
-  - sbt coverage test coverageReport && bash <(curl -s https://codecov.io/bash)
+script:
+  - sbt clean coverage test
+
+after_success:
+  - pip install --user codecov && codecov
